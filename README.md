@@ -51,4 +51,25 @@ void main() {
   name = "tom2"; // 수정 불가
 }
 ```
+## ✅Late Variables
+late 변수
+
+late 변수는 값을 나중에 할당할 수 있는 변수를 만들 수 있습니다.
+예를 들면 class에 변수를 late로 만들고 인스턴스를 생성할 때 변수를 선언 할때나 
+API 값을 가져올 때 사용하기 유용합니다.
+
+## ✅Constant Variables
+const 변수
+
+dart에서 const는 compile-time constant를 만들어준다.
+const는 컴파일할 때 알고 있는 값을 사용해야 한다.
+만약 어떤 값인지 모르고, 그 값이 API로부터 오거나 사용자가 화면에서 입력해야 하는 값이라면 그건 const가 아닌 final이나 var가 되어야 한다.
+```dart
+void main() {
+  const name = "tom"; // 컴파일 시점에 바뀌지 않는 값
+  final username=fetchAPI(); // 컴파일 시점에 바뀌는 값
+}
+```
+const: 컴파일 시점에 바뀌지 않는 값 (상수)
+final: 컴파일 시점에 바뀌는 값 (API에서 받아온 값, 사용자 입력값)
 
