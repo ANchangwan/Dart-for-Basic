@@ -22,3 +22,17 @@ void main(){
 }
 ```
 알 수 없는 데이터 타입을 받아올 때 유용하다.
+
+## ✅Null Safety
+개발자가 null을 참조 할 수 없도록 하는것이다.
+Dart는 기본적으로 null를 참조 할 수 없다.
+
+하지만 null를 참조해야 되는 상황이 발생할 수 있는데 그럴 때는 변수 타입에 ?를 표시해줌으로써
+nullable 할 수 있다.
+
+```dart
+void main() {
+String? name = "hello";
+name = null;
+}
+```
