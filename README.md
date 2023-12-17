@@ -32,8 +32,8 @@ nullable 할 수 있다.
 
 ```dart
 void main() {
-String? name = "hello";
-name = null;
+  String? name = "hello";
+  name = null;
 }
 ```
 ## ✅Final Variables
@@ -44,11 +44,11 @@ var대신 final로 변수를 만들게 되면 이 변수는 수정할 수 없게
 
 ```dart
 void main() {
-final name = "pizza";
-name = "ham"; // 수정 불가
+  final name = "pizza";
+  name = "ham"; // 수정 불가
 
-final String username = "tom";
-name = "tom2"; // 수정 불가
+  final String username = "tom";
+  name = "tom2"; // 수정 불가
 }
 ```
 
