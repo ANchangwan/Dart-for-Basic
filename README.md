@@ -73,7 +73,7 @@ void main() {
 const: 컴파일 시점에 바뀌지 않는 값 (상수)
 final: 컴파일 시점에 바뀌는 값 (API에서 받아온 값, 사용자 입력값)
 
-## collection if and collection for
+## ✅ collection if and collection for
 collection if와 collection for은 List 내에서 if문과 for문을 사용할 수 있는 기능입니다.
 collection if 사용 예시
 ```dart
