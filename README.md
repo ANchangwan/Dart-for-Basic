@@ -73,3 +73,45 @@ void main() {
 const: 컴파일 시점에 바뀌지 않는 값 (상수)
 final: 컴파일 시점에 바뀌는 값 (API에서 받아온 값, 사용자 입력값)
 
+## collection if and collection for
+collection if와 collection for은 List 내에서 if문과 for문을 사용할 수 있는 기능입니다.
+collection if 사용 예시
+```dart
+int calcul(int a, int b, bool flag) {
+  List<int> pls = [
+    1,
+    2,
+    if (flag) 5,
+  ];
+  int res = 0;
+  for (int i = 0; i < 3; i++) {
+    try {
+      res += pls[i];
+    } catch (e) {
+      return a + b + res;
+    }
+  }
+  return a + b + res;
+}
+
+void main() {
+  var age = 2;
+  var name = "changwan";
+  var res = "my name is $name and i'm ${age + 20}";
+  print(calcul(1, 2, false)); // 6
+  print(calcul(1, 2, true)); // 11
+}
+```
+collection for 사용 예시
+```dart
+void main() {
+var oldFriends = ["nico", "lynn"];
+var newFriends = [
+"tom",
+"jon",
+for (var friend in oldFriends) "❤️ $friend"
+];
+
+print(newFriends); // [tom, jon, ❤️ nico, ❤️ lynn]
+}
+```
